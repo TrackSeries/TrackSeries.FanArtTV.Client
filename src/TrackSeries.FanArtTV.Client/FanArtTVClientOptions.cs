@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace TrackSeries.FanArtTV.Client
+﻿namespace TrackSeries.FanArtTV.Client
 {
     public class FanArtTVClientOptions
     {

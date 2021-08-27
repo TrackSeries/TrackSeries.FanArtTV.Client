@@ -20,3 +20,7 @@ var provider = services.BuildServiceProvider();
 var client = provider.GetRequiredService<IFanArtTVClient>();
 
 var gameOfThrones = await client.TV.GetShow(121361, default);
+
+var latest = await client.TV.GetLatestShows(DateTime.Now.AddDays(-7), default);
+
+Console.WriteLine("Popcorn");

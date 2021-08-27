@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace TrackSeries.FanArtTV.Client
+﻿namespace TrackSeries.FanArtTV.Client
 {
     public class ImageInfo
     {

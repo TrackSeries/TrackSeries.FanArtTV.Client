@@ -1,4 +1,5 @@
 ﻿using TrackSeries.FanArtTV.Client.Movies;
+using TrackSeries.FanArtTV.Client.Music;
 using TrackSeries.FanArtTV.Client.TV;
 
 namespace TrackSeries.FanArtTV.Client
@@ -7,5 +8,6 @@ namespace TrackSeries.FanArtTV.Client
     {
         ITVClient TV { get; }
         IMoviesClient Movies { get; }
+        IMusicClient Music { get; }
     }
 }

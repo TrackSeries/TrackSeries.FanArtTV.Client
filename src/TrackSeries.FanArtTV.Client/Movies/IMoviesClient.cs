@@ -7,20 +7,20 @@ namespace TrackSeries.FanArtTV.Client.Movies
 {
     public interface IMoviesClient
     {
-        Task<MovieImages> GetMovieAsync(string id, CancellationToken cancellationToken);
+        Task<MovieImages> GetMovieAsync(string id, CancellationToken cancellationToken = default);
         /// <summary>
         /// Returns the list of movies that has been updated since the time specified.
         /// </summary>
         /// <param name="since"></param>
         /// <param name="cancellationToken"></param>
         /// <returns></returns>
-        Task<List<MovieImagesInfo>> GetLatestMoviesAsync(DateTime since, CancellationToken cancellationToken);
+        Task<List<MovieImagesInfo>> GetLatestMoviesAsync(DateTime since, CancellationToken cancellationToken = default);
         /// <summary>
         /// Returns the list of movies that has been updated since the time specified as unix timestamp.
         /// </summary>
         /// <param name="since">The unix timestamp</param>
         /// <param name="cancellationToken"></param>
         /// <returns></returns>
-        Task<List<MovieImagesInfo>> GetLatestMoviesAsync(long since, CancellationToken cancellationToken);
+        Task<List<MovieImagesInfo>> GetLatestMoviesAsync(long since, CancellationToken cancellationToken = default);
     }
 }

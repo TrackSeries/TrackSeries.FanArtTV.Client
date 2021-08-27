@@ -18,7 +18,7 @@ namespace TrackSeries.FanArtTV.Client.Movies
         public List<ImageInfo> HDMovieLogo { get; set; }
 
         [JsonPropertyName("moviedisc")]
-        public List<MovieDiscImageInfo> MovieDisc { get; set; }
+        public List<MovieDiscImage> MovieDisc { get; set; }
 
         [JsonPropertyName("movielogo")]
         public List<ImageInfo> MovieLogo { get; set; }

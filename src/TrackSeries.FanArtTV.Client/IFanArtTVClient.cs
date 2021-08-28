@@ -6,8 +6,17 @@ namespace TrackSeries.FanArtTV.Client
 {
     public interface IFanArtTVClient
     {
+        /// <summary>
+        /// TV related resources
+        /// </summary>
         ITVClient TV { get; }
+        /// <summary>
+        /// Movie related resources
+        /// </summary>
         IMoviesClient Movies { get; }
+        /// <summary>
+        /// Music related resources
+        /// </summary>
         IMusicClient Music { get; }
     }
 }

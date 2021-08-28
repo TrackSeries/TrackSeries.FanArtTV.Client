@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>.NET Client for the FanArt.TV API integrated with IHttpClientFactory best practices and IServiceCollection.</Description>
   </PropertyGroup>
 
   <ItemGroup>

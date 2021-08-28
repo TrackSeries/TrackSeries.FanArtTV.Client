@@ -28,4 +28,6 @@ jobs:
     - name: .NET Lib Pack
       run: dotnet pack --no-build -c Release /p:Packing=true /p:CI=true
     - name: Push package to NuGet
-      run: dotnet nuget push **/*.nupkg -k $NUGET_AUTH_TOKEN
+      run: dotnet nuget push **/*.nupkg -k $NUGET_AUTH_TOKEN -s https://api.nuget.org/v3/index.json
+      env:
+        NUGET_AUTH_TOKEN: ${{ secrets.NUGET_DEPLOY_KEY }}

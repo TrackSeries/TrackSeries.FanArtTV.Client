@@ -13,6 +13,11 @@ namespace Microsoft.Extensions.DependencyInjection
     {
         public static IHttpClientBuilder AddFanArtTVClient(this IServiceCollection services, Action<FanArtTVClientOptions> configureOptions = null)
         {
+            if (services is null)
+            {
+                throw new ArgumentNullException(nameof(services));
+            }
+
             services.AddOptions();
 
             if (configureOptions != null)
@@ -32,7 +37,6 @@ namespace Microsoft.Extensions.DependencyInjection
             })
             .AddPolicyHandler(GetRetryPolicy());
 
-
             services.TryAddEnumerable(ServiceDescriptor.Singleton<IPostConfigureOptions<FanArtTVClientOptions>, FanArtTVClientPostConfigureOptions>());
 
             return builder;
@@ -41,7 +45,6 @@ namespace Microsoft.Extensions.DependencyInjection
         private static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy()
         {
             var delay = Backoff.DecorrelatedJitterBackoffV2(medianFirstRetryDelay: TimeSpan.FromSeconds(1), retryCount: 5);
-
             return HttpPolicyExtensions
                 .HandleTransientHttpError()
                 .WaitAndRetryAsync(delay);

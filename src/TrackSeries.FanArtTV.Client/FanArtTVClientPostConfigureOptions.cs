@@ -10,7 +10,7 @@ namespace TrackSeries.FanArtTV.Client
 
         public FanArtTVClientPostConfigureOptions(IConfiguration configuration)
         {
-            _configuration = configuration;
+            _configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
         }
 
         public void PostConfigure(string name, FanArtTVClientOptions options)

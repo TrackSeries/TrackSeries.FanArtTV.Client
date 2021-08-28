@@ -1,4 +1,5 @@
-﻿using System.Net.Http;
+﻿using System;
+using System.Net.Http;
 using TrackSeries.FanArtTV.Client.Movies;
 using TrackSeries.FanArtTV.Client.Music;
 using TrackSeries.FanArtTV.Client.TV;
@@ -9,6 +10,11 @@ namespace TrackSeries.FanArtTV.Client
     {
         public FanArtTVClient(HttpClient client)
         {
+            if (client is null)
+            {
+                throw new ArgumentNullException(nameof(client));
+            }
+
             TV = new TVClient(client);
             Movies = new MoviesClient(client);
             Music = new MusicClient(client);

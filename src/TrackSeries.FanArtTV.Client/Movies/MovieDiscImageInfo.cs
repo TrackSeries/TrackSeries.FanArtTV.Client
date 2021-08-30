@@ -2,7 +2,7 @@
 
 namespace TrackSeries.FanArtTV.Client.Movies
 {
-    public class MovieDiscImage : ImageInfo
+    public class MovieDiscImageInfo : Image
     {
         [JsonPropertyName("disc")]
         public string Disc { get; set; }

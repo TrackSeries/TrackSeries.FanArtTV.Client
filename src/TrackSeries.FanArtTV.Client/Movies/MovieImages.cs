@@ -15,30 +15,30 @@ namespace TrackSeries.FanArtTV.Client.Movies
         public string IMDBId { get; set; }
 
         [JsonPropertyName("hdmovielogo")]
-        public List<ImageInfo> HDMovieLogo { get; set; }
+        public List<Image> HDMovieLogo { get; set; }
 
         [JsonPropertyName("moviedisc")]
-        public List<MovieDiscImage> MovieDisc { get; set; }
+        public List<MovieDiscImageInfo> MovieDisc { get; set; }
 
         [JsonPropertyName("movielogo")]
-        public List<ImageInfo> MovieLogo { get; set; }
+        public List<Image> MovieLogo { get; set; }
 
         [JsonPropertyName("movieposter")]
-        public List<ImageInfo> MoviePoster { get; set; }
+        public List<Image> MoviePoster { get; set; }
 
         [JsonPropertyName("hdmovieclearart")]
-        public List<ImageInfo> HDMovieClearArt { get; set; }
+        public List<Image> HDMovieClearArt { get; set; }
 
         [JsonPropertyName("movieart")]
-        public List<ImageInfo> MovieArt { get; set; }
+        public List<Image> MovieArt { get; set; }
 
         [JsonPropertyName("moviebackground")]
-        public List<ImageInfo> MovieBackground { get; set; }
+        public List<Image> MovieBackground { get; set; }
 
         [JsonPropertyName("moviebanner")]
-        public List<ImageInfo> MovieBanner { get; set; }
+        public List<Image> MovieBanner { get; set; }
 
         [JsonPropertyName("moviethumb")]
-        public List<ImageInfo> MovieThumb { get; set; }
+        public List<Image> MovieThumb { get; set; }
     }
 }

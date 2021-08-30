@@ -14,9 +14,9 @@ namespace TrackSeries.FanArtTV.Client.Movies
         public string IMDBId { get; set; }
 
         [JsonPropertyName("new_images")]
-        public string NewImages { get; set; }
+        public int? NewImages { get; set; }
 
         [JsonPropertyName("total_images")]
-        public string TotalImages { get; set; }
+        public int? TotalImages { get; set; }
     }
 }

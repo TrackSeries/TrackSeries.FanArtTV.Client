@@ -14,7 +14,7 @@ namespace TrackSeries.FanArtTV.Client.Movies
         /// <param name="cancellationToken"></param>
         /// <returns></returns>
         Task<MovieImages> GetMovieAsync(string id, CancellationToken cancellationToken = default);
-        
+
         /// <summary>
         /// Returns the list of movies that has been updated since the time specified.
         /// </summary>
@@ -22,7 +22,7 @@ namespace TrackSeries.FanArtTV.Client.Movies
         /// <param name="cancellationToken"></param>
         /// <returns></returns>
         Task<List<MovieImagesInfo>> GetLatestMoviesAsync(DateTime since, CancellationToken cancellationToken = default);
-        
+
         /// <summary>
         /// Returns the list of movies that has been updated since the time specified as unix timestamp.
         /// </summary>

@@ -54,7 +54,7 @@ namespace TrackSeries.FanArtTV.Client.Music
         /// <param name="cancellationToken"></param>
         /// <returns></returns>
         Task<MusicLabelImages> GetLabelAsync(string labelId, CancellationToken cancellationToken = default);
-        
+
         /// <summary>
         /// Returns the list of artists that has been updated since the time specified.
         /// </summary>
@@ -62,7 +62,7 @@ namespace TrackSeries.FanArtTV.Client.Music
         /// <param name="cancellationToken"></param>
         /// <returns></returns>
         Task<List<MusicImagesInfo>> GetLatestArtistsAsync(DateTime since, CancellationToken cancellationToken = default);
-        
+
         /// <summary>
         /// Returns the list of artists that has been updated since the time specified as unix timestamp.
         /// </summary>

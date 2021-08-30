@@ -14,7 +14,7 @@ namespace TrackSeries.FanArtTV.Client.TV
         /// <param name="cancellationToken"></param>
         /// <returns></returns>
         Task<ShowImages> GetShowAsync(int showId, CancellationToken cancellationToken = default);
-        
+
         /// <summary>
         /// Get images for a show
         /// </summary>
@@ -22,7 +22,7 @@ namespace TrackSeries.FanArtTV.Client.TV
         /// <param name="cancellationToken"></param>
         /// <returns></returns>
         Task<ShowImages> GetShowAsync(string showId, CancellationToken cancellationToken);
-        
+
         /// <summary>
         /// Returns the list of shows that has been updated since the time specified.
         /// </summary>
@@ -30,7 +30,7 @@ namespace TrackSeries.FanArtTV.Client.TV
         /// <param name="cancellationToken"></param>
         /// <returns></returns>
         Task<List<ShowImagesInfo>> GetLatestShowsAsync(DateTime since, CancellationToken cancellationToken = default);
-        
+
         /// <summary>
         /// Returns the list of shows that has been updated since the time specified as unix timestamp.
         /// </summary>

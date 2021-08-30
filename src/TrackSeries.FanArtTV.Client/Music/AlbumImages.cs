@@ -9,6 +9,6 @@ namespace TrackSeries.FanArtTV.Client.Music
         public List<MusicImage> AlbumCover { get; set; }
 
         [JsonPropertyName("cdart")]
-        public List<AlbumDiscImage> CdArt {get;set;}
+        public List<AlbumDiscImage> CdArt { get; set; }
     }
 }

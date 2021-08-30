@@ -9,28 +9,28 @@ namespace TrackSeries.FanArtTV.Client.TV
         [JsonPropertyName("thetvdb_id")]
         public string TheTVDBId { get; set; }
         [JsonPropertyName("seasonposter")]
-        public List<SeasonImageInfo> SeasonPoster { get; set; }
+        public List<SeasonImage> SeasonPoster { get; set; }
         [JsonPropertyName("hdtvlogo")]
-        public List<ImageInfo> HDTVLogo { get; set; }
+        public List<Image> HDTVLogo { get; set; }
         [JsonPropertyName("tvposter")]
-        public List<ImageInfo> TVPoster { get; set; }
+        public List<Image> TVPoster { get; set; }
         [JsonPropertyName("characterart")]
-        public List<ImageInfo> CharacterArt { get; set; }
+        public List<Image> CharacterArt { get; set; }
         [JsonPropertyName("clearlogo")]
-        public List<ImageInfo> ClearLogo { get; set; }
+        public List<Image> ClearLogo { get; set; }
         [JsonPropertyName("seasonthumb")]
-        public List<SeasonImageInfo> SeasonThumb { get; set; }
+        public List<SeasonImage> SeasonThumb { get; set; }
         [JsonPropertyName("hdclearart")]
-        public List<ImageInfo> HDClearArt { get; set; }
+        public List<Image> HDClearArt { get; set; }
         [JsonPropertyName("showbackground")]
-        public List<SeasonImageInfo> ShowBackground { get; set; }
+        public List<SeasonImage> ShowBackground { get; set; }
         [JsonPropertyName("tvthumb")]
-        public List<ImageInfo> TVThumb { get; set; }
+        public List<Image> TVThumb { get; set; }
         [JsonPropertyName("clearart")]
-        public List<ImageInfo> ClearArt { get; set; }
+        public List<Image> ClearArt { get; set; }
         [JsonPropertyName("tvbanner")]
-        public List<ImageInfo> TVBanner { get; set; }
+        public List<Image> TVBanner { get; set; }
         [JsonPropertyName("seasonbanner")]
-        public List<SeasonImageInfo> SeasonBanner { get; set; }
+        public List<SeasonImage> SeasonBanner { get; set; }
     }
 }

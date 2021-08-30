@@ -19,13 +19,13 @@ namespace TrackSeries.FanArtTV.Client.TV
         public Task<List<ShowImagesInfo>> GetLatestShowsAsync(DateTime since, CancellationToken cancellationToken)
             => GetLatestShowsAsync(new DateTimeOffset(since).ToUnixTimeSeconds(), cancellationToken);
 
-        public Task<List<ShowImagesInfo>> GetLatestShowsAsync(long since, CancellationToken cancellationToken) 
+        public Task<List<ShowImagesInfo>> GetLatestShowsAsync(long since, CancellationToken cancellationToken)
             => _client.GetFromJsonAsync<List<ShowImagesInfo>>($"tv/latest?date={since}", cancellationToken);
 
-        public Task<ShowImages> GetShowAsync(int showId, CancellationToken cancellationToken) 
+        public Task<ShowImages> GetShowAsync(int showId, CancellationToken cancellationToken)
             => GetShowAsync(showId.ToString(), cancellationToken);
 
-        public Task<ShowImages> GetShowAsync(string showId, CancellationToken cancellationToken) 
+        public Task<ShowImages> GetShowAsync(string showId, CancellationToken cancellationToken)
             => _client.GetFromJsonAsync<ShowImages>($"tv/{showId}", cancellationToken);
     }
 }
